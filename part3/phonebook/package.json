@@ -1,0 +1,25 @@
+{
+  "name": "phonebook",
+  "version": "1.0.0",
+  "description": "Phonebook fullstack app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build:ui": "cd frontend && npm run build && cp -r dist ../build",
+    "deploy:full": "npm run build:ui && git add . && git commit -m 'update build' && git push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "mongoose": "^9.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
