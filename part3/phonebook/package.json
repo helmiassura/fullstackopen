@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "build:ui": "cd frontend && npm run build && cp -r dist ../build",
     "deploy:full": "npm run build:ui && git add . && git commit -m 'update build' && git push"
   },
@@ -20,6 +22,8 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
     "nodemon": "^3.0.1"
   }
 }
