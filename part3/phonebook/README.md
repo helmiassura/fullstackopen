@@ -4,7 +4,7 @@ Backend application for phonebook with MongoDB database integration.
 
 ## 🚀 Live Demo
 
-**Deployed URL**: https://fullstackopen-production-b282.up.railway.app
+**Deployed URL**: https://fullstackopen-production-b282.up.railway.app/api/persons
 
 ## 📋 API Endpoints
 
