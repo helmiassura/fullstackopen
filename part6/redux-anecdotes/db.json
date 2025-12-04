@@ -1,0 +1,29 @@
+{
+  "anecdotes": [
+    {
+      "id": "1",
+      "content": "If it hurts, do it more often",
+      "votes": 6
+    },
+    {
+      "id": "2",
+      "content": "Adding manpower to a late software project makes it later!",
+      "votes": 7
+    },
+    {
+      "id": "3",
+      "content": "The first 90 percent of the code accounts for the first 90 percent of the development time...",
+      "votes": 3
+    },
+    {
+      "id": "938d",
+      "content": "test Helmi",
+      "votes": 8
+    },
+    {
+      "id": "baee",
+      "content": "hello!",
+      "votes": 5
+    }
+  ]
+}
