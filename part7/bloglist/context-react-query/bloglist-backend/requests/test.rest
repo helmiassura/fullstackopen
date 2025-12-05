@@ -1,0 +1,24 @@
+### 1. Create User
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "name": "Test User",
+  "password": "testpass"
+}
+
+### 2. Login
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpass"
+}
+
+### 3. Get Users
+GET http://localhost:3003/api/users
+
+### 4. Get Blogs
+GET http://localhost:3003/api/blogs

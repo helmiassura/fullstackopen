@@ -1,0 +1,30 @@
+### Get all blogs
+GET http://localhost:3003/api/blogs
+
+### Get single blog (replace with actual ID)
+GET http://localhost:3003/api/blogs/507f1f77bcf86cd799439011
+
+### Create new blog
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "Manual Test Blog",
+  "author": "Test Author",
+  "url": "https://testblog.com",
+  "likes": 5
+}
+
+### Update blog (replace with actual ID)
+PUT http://localhost:3003/api/blogs/507f1f77bcf86cd799439011
+Content-Type: application/json
+
+{
+  "title": "Updated Blog Title",
+  "author": "Updated Author",
+  "url": "https://updated.com",
+  "likes": 100
+}
+
+### Delete blog (replace with actual ID)
+DELETE http://localhost:3003/api/blogs/507f1f77bcf86cd799439011

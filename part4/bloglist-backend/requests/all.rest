@@ -1,0 +1,43 @@
+Login
+POST http://localhost:3003/api/login
+Content-Type: application/json
+{
+"username": "hellas",
+"password": "secret"
+}
+
+@token = <paste token here>
+Get all blogs
+GET http://localhost:3003/api/blogs
+Get all users
+GET http://localhost:3003/api/users
+Create user
+POST http://localhost:3003/api/users
+Content-Type: application/json
+{
+"username": "hellas",
+"name": "Arto Hellas",
+"password": "secret"
+}
+Create blog with token
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer {{token}}
+{
+"title": "Things I Don't Know as of 2018",
+"author": "Dan Abramov",
+"url": "https://overreacted.io/things-i-dont-know-as-of-2018/",
+"likes": 0
+}
+Delete blog with token
+DELETE http://localhost:3003/api/blogs/<blog-id>
+Authorization: Bearer {{token}}
+Update blog
+PUT http://localhost:3003/api/blogs/<blog-id>
+Content-Type: application/json
+{
+"title": "Updated Title",
+"author": "Updated Author",
+"url": "https://updated.com",
+"likes": 100
+}

@@ -1,0 +1,13 @@
+### Get all blogs (check if comments field exists)
+GET http://localhost:3003/api/blogs
+
+### Add comment to a blog (ganti :id dengan blog id yang ada)
+POST http://localhost:3003/api/blogs/YOUR_BLOG_ID_HERE/comments
+Content-Type: application/json
+
+{
+  "comment": "This is a test comment"
+}
+
+### Get blogs again to see if comment was added
+GET http://localhost:3003/api/blogs
